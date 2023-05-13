@@ -27,7 +27,7 @@
   &::after {
     content: "";
     width: $product-image-container-width;
-    height: 100%;
+    height: calc(100% + 1px);
     background-color: $bg-color;
     position: absolute;
     top: 0;

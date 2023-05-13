@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  font-size: 1vw;
+}
+
 .icon {
   color: #fff;
   font-size: 2.25rem;
@@ -97,7 +101,7 @@ body {
 .wrapper .product-container .product-image-container::after {
   content: "";
   width: 31.875rem;
-  height: 100%;
+  height: calc(100% + 1px);
   background-color: #e5e5e5;
   position: absolute;
   top: 0;
