@@ -69,7 +69,7 @@ body {
   grid-template-columns: 31.875rem 31.875rem;
 }
 .wrapper .product-container .product-image-container {
-  background-color: rgba(7, 142, 167, 0.7803921569);
+  background-color: rgba(7, 142, 167, 0.78);
   padding: 0.625rem 1rem;
   position: relative;
   z-index: 1;
