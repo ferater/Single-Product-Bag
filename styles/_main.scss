@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+//******** variables **************
+//*****icons
+$icon-color: #fff;
+$icon-size: 2.25rem;
+//*****
+//*****sidebar
+$sidebar-width: 6.25rem;
+$sidebar-height: 100%;
+$sidebar-bgc-color: #202627;
+//*****product container
+$product-container-width: 63.75rem;
+$product-container-bg-color: $bg-color;
+//*****product image
+$product-image-container-width: calc($product-container-width / 2);
+//**********************
+//common css
+.icon {
+  color: $icon-color;
+  font-size: $icon-size;
+}
+.hover-icon {
+  transition: scale 0.2s;
+  &:hover {
+    scale: 1.2;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+//********************
+body {
+  height: 100vh;
+  font-family: "Martel Sans", sans-serif;
+  background-color: darken($color: $bg-color, $amount: 10);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 70rem;
+  height: 37rem;
+  display: grid;
+  grid-template-columns: $sidebar-width $product-container-width;
+  //sidebar
+  @import "sidebar";
+  //product container
+  @import "product-container";
+}
