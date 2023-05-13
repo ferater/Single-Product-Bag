@@ -104,4 +104,23 @@ body {
   right: -21.25rem;
   transform: skew(-30deg);
   z-index: -1;
+}
+.wrapper .product-container .product-info {
+  padding: 1rem;
+  z-index: 1;
+}
+.wrapper .product-container .product-info .header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrapper .product-container .product-info .header .actions {
+  width: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .product-container .product-info .header .actions .icon {
+  color: #000000;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

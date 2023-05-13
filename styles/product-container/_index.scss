@@ -1,7 +1,28 @@
+$actions-icon-color: $black;
+$actions-icon-size: 1.5rem;
 & .product-container {
   background-color: $product-container-bg-color;
   display: grid;
   grid-template-columns: $product-image-container-width $product-image-container-width;
   //porudct image container
   @import "product-image-container";
+  & .product-info {
+    padding: 1rem;
+    z-index: 1;
+    & .header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      & .actions {
+        width: calc($actions-icon-size * 4);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .icon {
+          color: $actions-icon-color;
+          font-size: $actions-icon-size;
+        }
+      }
+    }
+  }
 }
