@@ -74,12 +74,25 @@ body {
   position: relative;
   z-index: 1;
 }
-.wrapper .product-container .product-image-container .brand-name {
+.wrapper .product-container .product-image-container .header .brand-name {
   color: #ffffff;
   font-weight: 400;
-  font-size: 52px;
-  line-height: 60px;
+  font-size: 3.25rem;
+  line-height: 3.75rem;
   text-transform: uppercase;
+}
+.wrapper .product-container .product-image-container .product-image {
+  width: 25rem;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .product-container .product-image-container .product-image img {
+  width: inherit;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .wrapper .product-container .product-image-container::after {
   content: "";
@@ -89,6 +102,6 @@ body {
   position: absolute;
   top: 0;
   right: -21.25rem;
-  transform: skew(-20deg);
+  transform: skew(-30deg);
   z-index: -1;
 }/*# sourceMappingURL=style.css.map */

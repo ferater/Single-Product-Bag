@@ -2,28 +2,6 @@
   background-color: $product-container-bg-color;
   display: grid;
   grid-template-columns: $product-image-container-width $product-image-container-width;
-  & .product-image-container {
-    background-color: rgba($color: $light-blue, $alpha: 0.78);
-    padding: 0.625rem 1rem;
-    position: relative;
-    z-index: 1;
-    & .brand-name {
-      color: $white;
-      font-weight: 400;
-      font-size: 52px;
-      line-height: 60px;
-      text-transform: uppercase;
-    }
-    &::after {
-      content: "";
-      width: $product-image-container-width;
-      height: 100%;
-      background-color: $bg-color;
-      position: absolute;
-      top: 0;
-      right: calc(($product-image-container-width / 1.5) * -1);
-      transform: skew(-20deg);
-      z-index: -1;
-    }
-  }
+  //porudct image container
+  @import "product-image-container";
 }
