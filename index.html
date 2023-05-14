@@ -71,7 +71,11 @@
             </div>
             <div class="content">
               <div class="stars">
-                <img src="assets/svg/stars.svg" alt="stars" />
+                <img
+                  src="assets/svg/stars.svg"
+                  alt="stars"
+                  class="cursor-pointer"
+                />
               </div>
               <div class="product-name">
                 <h1>Hope Large Two-Tone Saffiano Leather Satchel</h1>
@@ -79,16 +83,19 @@
               <div class="product-code">
                 <span>Style 351GGx847</span>
               </div>
-              <div class="price">
+              <div class="product-price">
                 <h2>$365.65</h2>
               </div>
               <div class="colors">
                 <span>Colors</span>
                 <div class="color-options">
+                  <div class="color active"></div>
+                  <div class="color"></div>
                   <div class="color"></div>
                 </div>
                 <div class="quantity">
-                  <select name="" id="">
+                  <span>Quantity</span>
+                  <select name="quantity" id="" class="quantity-select">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -96,13 +103,12 @@
                   </select>
                 </div>
                 <div class="wish-list">
-                  <iconify-icon
-                    icon="mdi:heart-outline"
-                    class="icon"
-                  ></iconify-icon>
-                  <span>Add to favorites</span>
+                  <input type="checkbox" name="favorite" id="favorite" />
+                  <label for="favorite">Add to favorites</label>
                 </div>
-                <button class="btn btn-add-to-cart">Add to Cart</button>
+                <button class="btn btn-add-to-cart">
+                  <span>Add to Cart</span>
+                </button>
               </div>
             </div>
           </div>

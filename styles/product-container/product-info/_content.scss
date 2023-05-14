@@ -1,0 +1,122 @@
+& .content {
+  padding: $product-info-padding-top $product-info-padding-right
+    $product-info-padding-bottom $product-info-padding-left;
+  & .stars {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    & img {
+      object-fit: cover;
+    }
+  }
+  & .product-name {
+    & h1 {
+      font-weight: $product-name-text-weight;
+      font-size: $product-name-text-size;
+      line-height: $product-name-text-line-height;
+      letter-spacing: $product-name-text-letter-spacing;
+    }
+  }
+  & .product-code {
+    & span {
+      font-weight: $product-code-text-weight;
+      font-size: $product-code-text-size;
+      line-height: $product-code-text-line-height;
+    }
+  }
+  & .product-price {
+    & h2 {
+      font-weight: $product-price-text-weight;
+      font-size: $product-price-text-size;
+      line-height: $product-price-text-line-height;
+      letter-spacing: $product-price-text-letter-spacing;
+      color: $light-blue;
+    }
+  }
+  & .colors {
+    & .color-options {
+      width: fit-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .color {
+        width: $color-select-size;
+        height: $color-select-size;
+        background-color: $light-blue;
+        border-radius: 50%;
+        margin-right: $color-select-size;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.active {
+          &::after {
+            content: "";
+            border-radius: inherit;
+            inset: calc(($color-select-size / 3) * -1);
+            position: absolute;
+            border: 1px solid $black;
+          }
+        }
+      }
+      & .color:not(& .color.active) {
+        cursor: pointer;
+      }
+    }
+  }
+  & .quantity {
+    padding: $quantitiy-padding-y $quantitiy-padding-x;
+    & select.quantity-select {
+      width: $quantitiy-select-width;
+      height: $quantitiy-select-height;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $black;
+      transition: border-color 0.2s;
+      &:hover {
+        border-bottom-color: $light-blue;
+      }
+    }
+  }
+  & .colors,
+  & .quantity {
+    & span {
+      font-weight: $product-colors-text-weight;
+      font-size: $product-colors-text-size;
+      display: block;
+    }
+  }
+  & .wish-list {
+    height: $wishlist-height;
+    display: flex;
+    align-items: center;
+    & label {
+      font-weight: $product-wishlist-text-wieght;
+      font-size: $product-wishlist-text-size;
+      line-height: $product-wishlist-text-line-height;
+      padding-left: $product-wishlist-text-padding-left;
+    }
+  }
+  & .btn {
+    width: $btn-width;
+    height: $btn-height;
+    background-color: $surface;
+    border: none;
+    outline: none;
+    transition: background-color 0.2s ease-in-out, scale 0.05s linear;
+    cursor: pointer;
+    & span {
+      font-weight: $btn-text-weight;
+      font-size: $btn-text-size;
+      line-height: $btn-text-line-height;
+      color: $white;
+    }
+    &:hover {
+      background-color: lighten($color: $surface, $amount: 10);
+    }
+    &:active {
+      scale: 0.99;
+      background-color: $surface;
+    }
+  }
+}

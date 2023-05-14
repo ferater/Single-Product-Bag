@@ -1,0 +1,15 @@
+& .header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  & .actions {
+    width: calc($actions-icon-size * 4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .icon {
+      color: $actions-icon-color;
+      font-size: $actions-icon-size;
+    }
+  }
+}

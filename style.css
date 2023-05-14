@@ -73,7 +73,7 @@ body {
   grid-template-columns: 31.875rem 31.875rem;
 }
 .wrapper .product-container .product-image-container {
-  background-color: rgba(7, 142, 167, 0.78);
+  background-color: rgba(7, 143, 167, 0.78);
   padding: 0.625rem 1rem;
   position: relative;
   z-index: 1;
@@ -127,4 +127,114 @@ body {
 .wrapper .product-container .product-info .header .actions .icon {
   color: #000000;
   font-size: 1.5rem;
+}
+.wrapper .product-container .product-info .content {
+  padding: 1rem 2rem 0 0;
+}
+.wrapper .product-container .product-info .content .stars {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.wrapper .product-container .product-info .content .stars img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .product-container .product-info .content .product-name h1 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  line-height: 3rem;
+  letter-spacing: -0.03em;
+}
+.wrapper .product-container .product-info .content .product-code span {
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 2rem;
+}
+.wrapper .product-container .product-info .content .product-price h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.04em;
+  color: #078fa7;
+}
+.wrapper .product-container .product-info .content .colors .color-options {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .product-container .product-info .content .colors .color-options .color {
+  width: 1rem;
+  height: 1rem;
+  background-color: #078fa7;
+  border-radius: 50%;
+  margin-right: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .product-container .product-info .content .colors .color-options .color.active::after {
+  content: "";
+  border-radius: inherit;
+  inset: -0.3333333333rem;
+  position: absolute;
+  border: 1px solid #000000;
+}
+.wrapper .product-container .product-info .content .colors .color-options .color:not(.wrapper .product-container .product-info .content .colors .color-options .color.active) {
+  cursor: pointer;
+}
+.wrapper .product-container .product-info .content .quantity {
+  padding: 0.75rem 0;
+}
+.wrapper .product-container .product-info .content .quantity select.quantity-select {
+  width: 4rem;
+  height: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+  transition: border-color 0.2s;
+}
+.wrapper .product-container .product-info .content .quantity select.quantity-select:hover {
+  border-bottom-color: #078fa7;
+}
+.wrapper .product-container .product-info .content .colors span, .wrapper .product-container .product-info .content .quantity span {
+  font-weight: 400;
+  font-size: 1.25rem;
+  display: block;
+}
+.wrapper .product-container .product-info .content .wish-list {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.wrapper .product-container .product-info .content .wish-list label {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  padding-left: 1.5rem;
+}
+.wrapper .product-container .product-info .content .btn {
+  width: 12rem;
+  height: 2.5rem;
+  background-color: #202627;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease-in-out, scale 0.05s linear;
+  cursor: pointer;
+}
+.wrapper .product-container .product-info .content .btn span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+}
+.wrapper .product-container .product-info .content .btn:hover {
+  background-color: #374143;
+}
+.wrapper .product-container .product-info .content .btn:active {
+  scale: 0.99;
+  background-color: #202627;
 }/*# sourceMappingURL=style.css.map */

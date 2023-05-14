@@ -1,4 +1,4 @@
-//product image container
+//=====product image container=====
 $product-image-container-bg-color: rgba(
   $color: $light-blue,
   $alpha: 0.78,
@@ -13,3 +13,47 @@ $brand-text-line-height: 3.75rem;
 //product image
 $product-image-width: 25rem;
 $product-image-height: 85%;
+//================================
+
+//=====product info container=====
+//product info
+$product-info-padding-top: 1rem;
+$product-info-padding-right: 2rem;
+$product-info-padding-bottom: 0;
+$product-info-padding-left: 0;
+//product name
+$product-name-text-weight: 800;
+$product-name-text-size: 1.75rem;
+$product-name-text-line-height: 3rem;
+$product-name-text-letter-spacing: -0.03em;
+//product code
+$product-code-text-weight: 400;
+$product-code-text-size: 1.3125rem;
+$product-code-text-line-height: 2rem;
+//product price
+$product-price-text-weight: 900;
+$product-price-text-size: 2.5rem;
+$product-price-text-line-height: 3rem;
+$product-price-text-letter-spacing: -0.04em;
+//product colors & Quantity text
+$product-colors-text-weight: 400;
+$product-colors-text-size: 1.25rem;
+//colors
+$color-select-size: 1rem;
+//quantity
+$quantitiy-padding-y: 0.75rem;
+$quantitiy-padding-x: 0;
+$quantitiy-select-width: 4rem;
+$quantitiy-select-height: 1.5rem;
+//wishlist
+$wishlist-height: 3rem;
+$product-wishlist-text-wieght: 400;
+$product-wishlist-text-size: 1.25rem;
+$product-wishlist-text-line-height: 3rem;
+$product-wishlist-text-padding-left: 1.5rem;
+//add to cart button
+$btn-width: 12rem;
+$btn-height: 2.5rem;
+$btn-text-weight: 600;
+$btn-text-size: 1.5rem;
+$btn-text-line-height: 1.25rem;

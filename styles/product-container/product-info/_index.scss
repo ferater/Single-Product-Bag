@@ -1,0 +1,8 @@
+& .product-info {
+  padding: 1rem;
+  z-index: 1;
+  //header
+  @import "header";
+  //content
+  @import "content";
+}
