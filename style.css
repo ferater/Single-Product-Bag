@@ -162,6 +162,39 @@ body {
 .wrapper .product-container .product-info .content .colors .color-options .color:not(.wrapper .product-container .product-info .content .colors .color-options .color.active) {
   cursor: pointer;
 }
+.wrapper .product-container .product-info .content .add-to-favorite {
+  height: 3rem;
+}
+.wrapper .product-container .product-info .content .add-to-favorite label {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.wrapper .product-container .product-info .content .add-to-favorite label span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 3rem;
+  padding-left: 2.5rem;
+}
+.wrapper .product-container .product-info .content .add-to-favorite .icon {
+  font-size: 1.5rem;
+  color: #000000;
+  position: absolute;
+  transform-origin: center;
+  transition: scale 0.05s;
+}
+.wrapper .product-container .product-info .content .add-to-favorite .icon.favorite-icon-filled {
+  scale: 1 0;
+}
+.wrapper .product-container .product-info .content .add-to-favorite input#favorite {
+  display: none;
+}
+.wrapper .product-container .product-info .content .add-to-favorite input#favorite:checked ~ .favorite-icon {
+  scale: 1 0;
+}
+.wrapper .product-container .product-info .content .add-to-favorite input#favorite:checked ~ .favorite-icon-filled {
+  scale: 1 1;
+}
 .wrapper .product-container .product-info .content .stars {
   margin-bottom: 0.75rem;
   display: flex;
@@ -212,17 +245,6 @@ body {
   font-size: 1.25rem;
   line-height: 2rem;
   display: block;
-}
-.wrapper .product-container .product-info .content .wish-list {
-  height: 3rem;
-  display: flex;
-  align-items: center;
-}
-.wrapper .product-container .product-info .content .wish-list label {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 3rem;
-  padding-left: 1.5rem;
 }
 .wrapper .product-container .btn {
   width: 12rem;

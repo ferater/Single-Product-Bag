@@ -49,6 +49,7 @@ $product-price-text-size: 2.5rem;
 $product-price-text-line-height: 3rem;
 $product-price-text-letter-spacing: -0.04em;
 //product colors & Quantity text
+$product-colors-text-margin-top: 0.75rem;
 $product-colors-text-weight: 400;
 $product-colors-text-size: 1.25rem;
 $product-colors-text-line-height: 2rem;
@@ -60,12 +61,14 @@ $quantitiy-padding-y: 0.75rem;
 $quantitiy-padding-x: 0;
 $quantitiy-select-width: 4rem;
 $quantitiy-select-height: 1.5rem;
-//wishlist
-$wishlist-height: 3rem;
-$product-wishlist-text-wieght: 400;
-$product-wishlist-text-size: 1.25rem;
-$product-wishlist-text-line-height: 3rem;
-$product-wishlist-text-padding-left: 1.5rem;
+//add-to-favorite
+$favorite-height: 3rem;
+$product-favorite-text-wieght: 400;
+$product-favorite-text-size: 1rem;
+$product-favorite-text-line-height: 3rem;
+$product-favorite-text-padding-left: 2.5rem;
+$product-favorite-icon-size: 1.5rem;
+$product-favorite-icon-color: $black;
 //add to cart button
 $btn-width: 12rem;
 $btn-height: 2.5rem;

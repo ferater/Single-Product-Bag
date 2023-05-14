@@ -1,8 +1,10 @@
 & .content {
   padding: $product-info-padding-top $product-info-padding-right
     $product-info-padding-bottom $product-info-padding-left;
-  //color select
+  //product colors
   @import "product-colors";
+  //add to favorite
+  @import "add-to-favorite";
   & .stars {
     margin-bottom: 0.75rem;
     display: flex;
@@ -52,23 +54,12 @@
   }
   & .colors,
   & .quantity {
-    margin-top: 0.75rem;
+    margin-top: $product-colors-text-margin-top;
     & span {
       font-weight: $product-colors-text-weight;
       font-size: $product-colors-text-size;
       line-height: $product-colors-text-line-height;
       display: block;
-    }
-  }
-  & .wish-list {
-    height: $wishlist-height;
-    display: flex;
-    align-items: center;
-    & label {
-      font-weight: $product-wishlist-text-wieght;
-      font-size: $product-wishlist-text-size;
-      line-height: $product-wishlist-text-line-height;
-      padding-left: $product-wishlist-text-padding-left;
     }
   }
 }
