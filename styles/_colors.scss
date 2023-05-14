@@ -1,6 +1,19 @@
-$bg-color: #e5e5e5;
-$black: #000000;
-$white: #ffffff;
-$light-blue: #078fa7;
-$price: #3da7ba;
-$surface: #202627;
+$colors: (
+  "bg-color": #e5e5e5,
+  "black": #000000,
+  "white": #ffffff,
+  "surface": #202627,
+  "light-blue": #078fa7,
+  "brown": #a73a07,
+  "purple": #a70792,
+);
+body {
+  --primary: #{map-get($map: $colors, $key: "light-blue")};
+  --bg-color: #{map-get($map: $colors, $key: "bg-color")};
+  --black: #{map-get($map: $colors, $key: "black")};
+  --white: #{map-get($map: $colors, $key: "white")};
+  --surface: #{map-get($map: $colors, $key: "surface")};
+  --light-blue: #{map-get($map: $colors, $key: "light-blue")};
+  --brown: #{map-get($map: $colors, $key: "brown")};
+  --purple: #{map-get($map: $colors, $key: "purple")};
+}

@@ -7,7 +7,6 @@
     & .color {
       width: $color-select-size;
       height: $color-select-size;
-      background-color: $light-blue;
       border-radius: $color-select-radius;
       margin-right: $color-select-size;
       position: relative;
@@ -20,12 +19,21 @@
           border-radius: inherit;
           inset: calc(($color-select-size / 3) * -1);
           position: absolute;
-          border: 1px solid $black;
+          border: 1px solid var(--black);
         }
       }
     }
     & .color:not(& .color.active) {
       cursor: pointer;
     }
+  }
+  & .light-blue {
+    background-color: var(--light-blue);
+  }
+  & .brown {
+    background-color: var(--brown);
+  }
+  & .purple {
+    background-color: var(--purple);
   }
 }

@@ -21,7 +21,7 @@ html {
 body {
   height: 100vh;
   font-family: "Martel Sans", sans-serif;
-  background-color: darken($color: $bg-color, $amount: 10);
+  background-color: darken($color: map-get($colors, "bg-color"), $amount: 10);
 }
 
 .container {

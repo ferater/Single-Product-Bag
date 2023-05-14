@@ -5,17 +5,14 @@ $icon-size: 2.25rem;
 //*****sidebar
 $sidebar-width: 6.25rem;
 $sidebar-height: 100%;
-$sidebar-bgc-color: $surface;
+$sidebar-bgc-color: var(--surface);
 //*****product container
 $product-container-width: 63.75rem;
-$product-container-bg-color: $bg-color;
+$product-container-bg-color: var(--bg-color);
 //*****product image
 $product-image-container-width: calc($product-container-width / 2);
 //=====product image container=====
-$product-image-container-bg-color: rgba(
-  $color: $light-blue,
-  $alpha: 0.78,
-);
+$product-image-container-bg-color: var(--primary);
 $product-image-container-bg-angle: -30deg;
 $product-image-container-padding-y: 0.625rem;
 $product-image-container-padding-x: 1rem;
@@ -68,7 +65,7 @@ $product-favorite-text-size: 1rem;
 $product-favorite-text-line-height: 3rem;
 $product-favorite-text-padding-left: 2.5rem;
 $product-favorite-icon-size: 1.5rem;
-$product-favorite-icon-color: $black;
+$product-favorite-icon-color: var(--black);
 //add to cart button
 $btn-width: 12rem;
 $btn-height: 2.5rem;

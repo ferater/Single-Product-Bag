@@ -8,7 +8,7 @@
   align-items: center;
   & .header {
     & .brand-name {
-      color: $white;
+      color: var(--white);
       font-weight: $brand-text-weight;
       font-size: $brand-text-size;
       line-height: $brand-text-line-height;
@@ -31,7 +31,7 @@
     content: "";
     width: $product-image-container-width;
     height: calc(100% + 1px);
-    background-color: $bg-color;
+    background-color: var(--bg-color);
     position: absolute;
     top: 0;
     right: calc(($product-image-container-width / 1.5) * -1);

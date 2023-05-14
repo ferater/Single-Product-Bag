@@ -37,7 +37,7 @@
       font-size: $product-price-text-size;
       line-height: $product-price-text-line-height;
       letter-spacing: $product-price-text-letter-spacing;
-      color: $light-blue;
+      color: var(--light-blue);
     }
   }
   & .quantity {
@@ -47,10 +47,10 @@
       height: $quantitiy-select-height;
       border: none;
       outline: none;
-      border-bottom: 1px solid $black;
+      border-bottom: 1px solid var(--black);
       transition: border-color 0.2s;
       &:hover {
-        border-bottom-color: $light-blue;
+        border-bottom-color: var(--primary);
       }
     }
   }
