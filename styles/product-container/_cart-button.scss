@@ -1,0 +1,22 @@
+.btn {
+  width: $btn-width;
+  height: $btn-height;
+  background-color: $surface;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease-in-out, scale 0.05s linear;
+  cursor: pointer;
+  & span {
+    font-weight: $btn-text-weight;
+    font-size: $btn-text-size;
+    line-height: $btn-text-line-height;
+    color: $white;
+  }
+  &:hover {
+    background-color: lighten($color: $surface, $amount: 10);
+  }
+  &:active {
+    scale: 0.99;
+    background-color: $surface;
+  }
+}

@@ -1,0 +1,31 @@
+& .colors {
+  & .color-options {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .color {
+      width: $color-select-size;
+      height: $color-select-size;
+      background-color: $light-blue;
+      border-radius: $color-select-radius;
+      margin-right: $color-select-size;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active {
+        &::after {
+          content: "";
+          border-radius: inherit;
+          inset: calc(($color-select-size / 3) * -1);
+          position: absolute;
+          border: 1px solid $black;
+        }
+      }
+    }
+    & .color:not(& .color.active) {
+      cursor: pointer;
+    }
+  }
+}

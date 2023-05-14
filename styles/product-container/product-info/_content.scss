@@ -1,6 +1,8 @@
 & .content {
   padding: $product-info-padding-top $product-info-padding-right
     $product-info-padding-bottom $product-info-padding-left;
+  //color select
+  @import "color-select";
   & .stars {
     display: flex;
     justify-content: start;
@@ -31,37 +33,6 @@
       line-height: $product-price-text-line-height;
       letter-spacing: $product-price-text-letter-spacing;
       color: $light-blue;
-    }
-  }
-  & .colors {
-    & .color-options {
-      width: fit-content;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      & .color {
-        width: $color-select-size;
-        height: $color-select-size;
-        background-color: $light-blue;
-        border-radius: 50%;
-        margin-right: $color-select-size;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &.active {
-          &::after {
-            content: "";
-            border-radius: inherit;
-            inset: calc(($color-select-size / 3) * -1);
-            position: absolute;
-            border: 1px solid $black;
-          }
-        }
-      }
-      & .color:not(& .color.active) {
-        cursor: pointer;
-      }
     }
   }
   & .quantity {
@@ -95,28 +66,6 @@
       font-size: $product-wishlist-text-size;
       line-height: $product-wishlist-text-line-height;
       padding-left: $product-wishlist-text-padding-left;
-    }
-  }
-  & .btn {
-    width: $btn-width;
-    height: $btn-height;
-    background-color: $surface;
-    border: none;
-    outline: none;
-    transition: background-color 0.2s ease-in-out, scale 0.05s linear;
-    cursor: pointer;
-    & span {
-      font-weight: $btn-text-weight;
-      font-size: $btn-text-size;
-      line-height: $btn-text-line-height;
-      color: $white;
-    }
-    &:hover {
-      background-color: lighten($color: $surface, $amount: 10);
-    }
-    &:active {
-      scale: 0.99;
-      background-color: $surface;
     }
   }
 }

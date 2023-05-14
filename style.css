@@ -131,33 +131,6 @@ body {
 .wrapper .product-container .product-info .content {
   padding: 1rem 2rem 0 0;
 }
-.wrapper .product-container .product-info .content .stars {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-.wrapper .product-container .product-info .content .stars img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.wrapper .product-container .product-info .content .product-name h1 {
-  font-weight: 800;
-  font-size: 1.75rem;
-  line-height: 3rem;
-  letter-spacing: -0.03em;
-}
-.wrapper .product-container .product-info .content .product-code span {
-  font-weight: 400;
-  font-size: 1.3125rem;
-  line-height: 2rem;
-}
-.wrapper .product-container .product-info .content .product-price h2 {
-  font-weight: 900;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  letter-spacing: -0.04em;
-  color: #078fa7;
-}
 .wrapper .product-container .product-info .content .colors .color-options {
   width: -moz-fit-content;
   width: fit-content;
@@ -185,6 +158,33 @@ body {
 }
 .wrapper .product-container .product-info .content .colors .color-options .color:not(.wrapper .product-container .product-info .content .colors .color-options .color.active) {
   cursor: pointer;
+}
+.wrapper .product-container .product-info .content .stars {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.wrapper .product-container .product-info .content .stars img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .product-container .product-info .content .product-name h1 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  line-height: 3rem;
+  letter-spacing: -0.03em;
+}
+.wrapper .product-container .product-info .content .product-code span {
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 2rem;
+}
+.wrapper .product-container .product-info .content .product-price h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.04em;
+  color: #078fa7;
 }
 .wrapper .product-container .product-info .content .quantity {
   padding: 0.75rem 0;
@@ -216,7 +216,7 @@ body {
   line-height: 3rem;
   padding-left: 1.5rem;
 }
-.wrapper .product-container .product-info .content .btn {
+.wrapper .product-container .btn {
   width: 12rem;
   height: 2.5rem;
   background-color: #202627;
@@ -225,16 +225,16 @@ body {
   transition: background-color 0.2s ease-in-out, scale 0.05s linear;
   cursor: pointer;
 }
-.wrapper .product-container .product-info .content .btn span {
+.wrapper .product-container .btn span {
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.25rem;
   color: #ffffff;
 }
-.wrapper .product-container .product-info .content .btn:hover {
+.wrapper .product-container .btn:hover {
   background-color: #374143;
 }
-.wrapper .product-container .product-info .content .btn:active {
+.wrapper .product-container .btn:active {
   scale: 0.99;
   background-color: #202627;
 }/*# sourceMappingURL=style.css.map */
