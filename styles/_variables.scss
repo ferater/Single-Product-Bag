@@ -1,3 +1,16 @@
+//*****icons
+$icon-color: #fff;
+$icon-size: 2.25rem;
+//*****
+//*****sidebar
+$sidebar-width: 6.25rem;
+$sidebar-height: 100%;
+$sidebar-bgc-color: $surface;
+//*****product container
+$product-container-width: 63.75rem;
+$product-container-bg-color: $bg-color;
+//*****product image
+$product-image-container-width: calc($product-container-width / 2);
 //=====product image container=====
 $product-image-container-bg-color: rgba(
   $color: $light-blue,
@@ -11,7 +24,7 @@ $brand-text-weight: 400;
 $brand-text-size: 3.25rem;
 $brand-text-line-height: 3.75rem;
 //product image
-$product-image-width: 25rem;
+$product-image-width: 23rem;
 $product-image-height: 85%;
 //================================
 
@@ -29,7 +42,7 @@ $product-name-text-letter-spacing: -0.03em;
 //product code
 $product-code-text-weight: 400;
 $product-code-text-size: 1.3125rem;
-$product-code-text-line-height: 2rem;
+$product-code-text-line-height: 3rem;
 //product price
 $product-price-text-weight: 900;
 $product-price-text-size: 2.5rem;
@@ -38,6 +51,7 @@ $product-price-text-letter-spacing: -0.04em;
 //product colors & Quantity text
 $product-colors-text-weight: 400;
 $product-colors-text-size: 1.25rem;
+$product-colors-text-line-height: 2rem;
 //colors
 $color-select-size: 1rem;
 $color-select-radius: 50%;

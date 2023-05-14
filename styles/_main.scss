@@ -1,21 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
 html {
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
-//******** variables **************
-//*****icons
-$icon-color: #fff;
-$icon-size: 2.25rem;
-//*****
-//*****sidebar
-$sidebar-width: 6.25rem;
-$sidebar-height: 100%;
-$sidebar-bgc-color: $surface;
-//*****product container
-$product-container-width: 63.75rem;
-$product-container-bg-color: $bg-color;
-//*****product image
-$product-image-container-width: calc($product-container-width / 2);
 //**********************
 //common css
 .icon {

@@ -12,7 +12,7 @@ a {
 }
 
 html {
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 .icon {
@@ -77,6 +77,9 @@ body {
   padding: 0.625rem 1rem;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .wrapper .product-container .product-image-container .header .brand-name {
   color: #ffffff;
@@ -86,7 +89,7 @@ body {
   text-transform: uppercase;
 }
 .wrapper .product-container .product-image-container .product-image {
-  width: 25rem;
+  width: 23rem;
   height: 85%;
   display: flex;
   justify-content: center;
@@ -160,6 +163,7 @@ body {
   cursor: pointer;
 }
 .wrapper .product-container .product-info .content .stars {
+  margin-bottom: 0.75rem;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -177,7 +181,7 @@ body {
 .wrapper .product-container .product-info .content .product-code span {
   font-weight: 400;
   font-size: 1.3125rem;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 .wrapper .product-container .product-info .content .product-price h2 {
   font-weight: 900;
@@ -200,9 +204,13 @@ body {
 .wrapper .product-container .product-info .content .quantity select.quantity-select:hover {
   border-bottom-color: #078fa7;
 }
+.wrapper .product-container .product-info .content .colors, .wrapper .product-container .product-info .content .quantity {
+  margin-top: 0.75rem;
+}
 .wrapper .product-container .product-info .content .colors span, .wrapper .product-container .product-info .content .quantity span {
   font-weight: 400;
   font-size: 1.25rem;
+  line-height: 2rem;
   display: block;
 }
 .wrapper .product-container .product-info .content .wish-list {

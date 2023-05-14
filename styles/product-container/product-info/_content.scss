@@ -2,8 +2,9 @@
   padding: $product-info-padding-top $product-info-padding-right
     $product-info-padding-bottom $product-info-padding-left;
   //color select
-  @import "color-select";
+  @import "product-colors";
   & .stars {
+    margin-bottom: 0.75rem;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -51,9 +52,11 @@
   }
   & .colors,
   & .quantity {
+    margin-top: 0.75rem;
     & span {
       font-weight: $product-colors-text-weight;
       font-size: $product-colors-text-size;
+      line-height: $product-colors-text-line-height;
       display: block;
     }
   }

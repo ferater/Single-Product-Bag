@@ -3,6 +3,9 @@
   padding: $product-image-container-padding-y $product-image-container-padding-x;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   & .header {
     & .brand-name {
       color: $white;
