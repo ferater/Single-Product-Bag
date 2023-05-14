@@ -195,6 +195,28 @@ body {
 .wrapper .product-container .product-info .content .add-to-favorite input#favorite:checked ~ .favorite-icon-filled {
   scale: 1 1;
 }
+.wrapper .product-container .product-info .content .btn {
+  width: 12rem;
+  height: 2.5rem;
+  background-color: #202627;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease-in-out, scale 0.05s linear;
+  cursor: pointer;
+}
+.wrapper .product-container .product-info .content .btn span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+}
+.wrapper .product-container .product-info .content .btn:hover {
+  background-color: #374143;
+}
+.wrapper .product-container .product-info .content .btn:active {
+  scale: 0.99;
+  background-color: #202627;
+}
 .wrapper .product-container .product-info .content .stars {
   margin-bottom: 0.75rem;
   display: flex;
@@ -245,26 +267,4 @@ body {
   font-size: 1.25rem;
   line-height: 2rem;
   display: block;
-}
-.wrapper .product-container .btn {
-  width: 12rem;
-  height: 2.5rem;
-  background-color: #202627;
-  border: none;
-  outline: none;
-  transition: background-color 0.2s ease-in-out, scale 0.05s linear;
-  cursor: pointer;
-}
-.wrapper .product-container .btn span {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.25rem;
-  color: #ffffff;
-}
-.wrapper .product-container .btn:hover {
-  background-color: #374143;
-}
-.wrapper .product-container .btn:active {
-  scale: 0.99;
-  background-color: #202627;
 }/*# sourceMappingURL=style.css.map */
