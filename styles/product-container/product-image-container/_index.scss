@@ -22,12 +22,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     & img {
       width: inherit;
       height: auto;
       object-fit: cover;
+      &.slide-to-left {
+        animation: slideToLeft 0.3s linear;
+      }
     }
   }
+  //product-image-container after
   &::after {
     content: "";
     width: $product-image-container-width;

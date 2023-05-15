@@ -35,14 +35,24 @@ colorSelectElements.forEach((colorElement, index) => {
   );
   //set default product image by default color
   productImage.src = `assets/img/women_bag_${defaultColor}.png`;
+
   colorElement.addEventListener("click", () => {
     //toggle active clas for colors
     toggleActiveClass(colorElement, index);
+
     //set default product image by selected color
     productImage.src = `assets/img/women_bag_${Object.keys(colors)[index]}.png`;
+
     //set selected color as primary
     document.body.style.setProperty("--primary", Object.values(colors)[index]);
+
+    //add slide effect to product image
+    productImage.classList.add("slide-to-left");
   });
+});
+//remove image slide effect when animation ends
+productImage.addEventListener("animationend", (e) => {
+  e.target.classList.remove("slide-to-left");
 });
 
 //toggle active class function
