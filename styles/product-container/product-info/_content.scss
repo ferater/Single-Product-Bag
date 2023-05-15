@@ -14,7 +14,7 @@
     align-items: center;
     & img {
       width: auto;
-      height: 1.5rem;
+      height: $product-stars-height;
       object-fit: cover;
     }
   }
