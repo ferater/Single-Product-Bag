@@ -1,3 +1,4 @@
+import "./style.module.scss";
 const productColors = [
   { name: "light-blue" },
   { name: "brown" },

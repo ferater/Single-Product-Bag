@@ -1,0 +1,16 @@
+{
+  "name": "single-product-bag",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.5"
+  }
+}
+
