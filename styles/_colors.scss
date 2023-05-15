@@ -4,16 +4,21 @@ $colors: (
   "white": #ffffff,
   "surface": #202627,
   "light-blue": #078fa7,
-  "brown": #a73a07,
+  "brown": #8b360c,
   "purple": #a70792,
 );
 body {
   --primary: #{map-get($map: $colors, $key: "light-blue")};
+  --light-blue: #{map-get($map: $colors, $key: "light-blue")};
   --bg-color: #{map-get($map: $colors, $key: "bg-color")};
   --black: #{map-get($map: $colors, $key: "black")};
   --white: #{map-get($map: $colors, $key: "white")};
   --surface: #{map-get($map: $colors, $key: "surface")};
-  --light-blue: #{map-get($map: $colors, $key: "light-blue")};
   --brown: #{map-get($map: $colors, $key: "brown")};
   --purple: #{map-get($map: $colors, $key: "purple")};
+}
+:export {
+  light-blue: #{map-get($colors, "light-blue")};
+  purple: #{map-get($colors, "purple")};
+  brown: #{map-get($colors, "brown")};
 }

@@ -1,14 +1,10 @@
-import "./style.module.scss";
-const productColors = [
-  { name: "light-blue" },
-  { name: "brown" },
-  { name: "purple" },
-];
+import colors from "./style.module.scss";
+const product = { name: "bag", colors: ["light-blue", "brown", "purple"] };
 const colorElementContainer = document.querySelector(".color-options");
 
-colorElementContainer.innerHTML = productColors
+colorElementContainer.innerHTML = product.colors
   .map((color, index) => {
-    return `<div class="color ${color.name}"></div>`;
+    return `<div class="color ${color}"></div>`;
   })
   .join("");
 
@@ -16,6 +12,6 @@ const colorElements = document.querySelectorAll(".color");
 colorElements.forEach((colorElement, index) => {
   colorElement.addEventListener("click", () => {
     colorElement.classList.toggle("active");
-    document.body.style.setProperty("--primary", productColors[index].name);
+    document.body.style.setProperty("--primary", Object.values(colors)[index]);
   });
 });
