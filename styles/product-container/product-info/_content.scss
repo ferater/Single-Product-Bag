@@ -13,6 +13,8 @@
     justify-content: start;
     align-items: center;
     & img {
+      width: auto;
+      height: 1.5rem;
       object-fit: cover;
     }
   }
