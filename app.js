@@ -37,6 +37,9 @@ colorSelectElements.forEach((colorElement, index) => {
   productImage.src = `assets/img/women_bag_${defaultColor}.png`;
 
   colorElement.addEventListener("click", () => {
+    //stop if color active
+    if (colorElement.classList.contains("active")) return;
+
     //toggle active clas for colors
     toggleActiveClass(colorElement, index);
 
