@@ -8,7 +8,7 @@
   //cart button
   @import "add-to-cart-button";
   & .stars {
-    margin-bottom: 0.75rem;
+    margin-bottom: $product-stars-margin-bottom;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -39,7 +39,7 @@
       font-size: $product-price-text-size;
       line-height: $product-price-text-line-height;
       letter-spacing: $product-price-text-letter-spacing;
-      color: var(--light-blue);
+      color: $product-price-text-color;
     }
   }
   & .quantity {
@@ -49,10 +49,11 @@
       height: $quantitiy-select-height;
       border: none;
       outline: none;
-      border-bottom: 1px solid var(--black);
-      transition: border-color 0.2s;
+      border-bottom: $quantitiy-select-border-width solid
+        $quantitiy-select-border-color;
+      transition: border-color $transition-time;
       &:hover {
-        border-bottom-color: var(--primary);
+        border-bottom-color: $quantitiy-select-border-hover-color;
       }
     }
   }

@@ -9,7 +9,7 @@
   transition: background-color $transition-time;
   & .header {
     & .brand-name {
-      color: var(--white);
+      color: $brand-text-color;
       font-weight: $brand-text-weight;
       font-size: $brand-text-size;
       line-height: $brand-text-line-height;

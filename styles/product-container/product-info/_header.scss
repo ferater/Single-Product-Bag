@@ -3,7 +3,7 @@
   justify-content: flex-end;
   align-items: center;
   & .actions {
-    width: calc($actions-icon-size * 3);
+    width: $actions-width;
     display: flex;
     justify-content: space-between;
     align-items: center;

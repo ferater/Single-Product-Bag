@@ -1,7 +1,7 @@
 .btn {
   width: $btn-width;
   height: $btn-height;
-  background-color: var(--surface);
+  background-color: $btn-bg-color;
   border: none;
   outline: none;
   transition: background-color 0.2s ease-in-out, scale 0.05s linear;
@@ -10,13 +10,13 @@
     font-weight: $btn-text-weight;
     font-size: $btn-text-size;
     line-height: $btn-text-line-height;
-    color: var(--white);
+    color: $btn-text-color;
   }
   &:hover {
-    background-color: lighten($color: map-get($colors, "surface"), $amount: 10);
+    background-color: $btn-hover-bg-color;
   }
   &:active {
     scale: 0.99;
-    background-color: var(--surface);
+    background-color: $btn-bg-color;
   }
 }

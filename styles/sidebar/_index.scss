@@ -1,15 +1,13 @@
 & .sidebar {
   height: $sidebar-height;
   background-color: $sidebar-bgc-color;
-  padding: 1rem 0;
+  padding: $sidebar-padding-y $sidebar-padding-x;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  //   & .menu-button {
-  //   }
   & .social {
-    height: calc($icon-size * 4);
+    height: $sidebar-social-menu-height;
     display: flex;
     flex-direction: column;
     align-items: center;
