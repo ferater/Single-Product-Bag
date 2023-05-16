@@ -9,6 +9,7 @@
   position: absolute;
   right: $cart-badge-right-position;
   bottom: $cart-badge-bottom-position;
+  pointer-events: none;
   & span {
     font-size: $cart-badge-text-size;
     color: $cart-badge-text-color;

@@ -1,3 +1,6 @@
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
 $colors: (
   "bg-color": #e5e5e5,
   "black": #000000,
@@ -10,6 +13,7 @@ $colors: (
 body {
   --bg-color: #{map-get($map: $colors, $key: "bg-color")};
   --black: #{map-get($map: $colors, $key: "black")};
+  --black-rgb: #{hexToRGB(map-get($map: $colors, $key: "black"))};
   --white: #{map-get($map: $colors, $key: "white")};
   --surface: #{map-get($map: $colors, $key: "surface")};
   --light-blue: #{map-get($map: $colors, $key: "light-blue")};
