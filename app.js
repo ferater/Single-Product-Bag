@@ -7,7 +7,7 @@ const product = {
   colors: ["light-blue", "purple", "brown"],
 };
 //define default color
-const defaultColor = "purple";
+const defaultColor = "light-blue";
 
 //select product image
 const productImage = document.querySelector(".product-image img");

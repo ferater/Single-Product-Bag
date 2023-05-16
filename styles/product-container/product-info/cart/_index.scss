@@ -1,0 +1,19 @@
+& .cart {
+  height: $actions-icon-size;
+  position: relative;
+  //cart badge
+  @import "badge";
+  & .cart-popup {
+    @include action-popup();
+    //cart body
+    @import "cart-body";
+  }
+  //show cart body on hover
+  &:hover {
+    & .cart-popup {
+      top: $cart-body-hover-top-position;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

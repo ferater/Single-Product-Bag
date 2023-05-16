@@ -1,0 +1,16 @@
+& .badge {
+  width: $cart-badge-size;
+  height: $cart-badge-size;
+  background-color: $cart-badge-bg-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: $cart-badge-right-position;
+  bottom: $cart-badge-bottom-position;
+  & span {
+    font-size: $cart-badge-text-size;
+    color: $cart-badge-text-color;
+  }
+}
