@@ -1,6 +1,6 @@
 // import colors & sytles from scss
 import colors from "./style.module.scss";
-
+//***** product info & colors **********/
 //define product
 const product = {
   name: "bag",
@@ -65,3 +65,17 @@ function toggleActiveClass(element) {
     element.classList.add("active");
   });
 }
+//***************************************/
+//***** search box **********/
+//select serch icon
+const searchIcon = document.querySelector(".search-icon");
+//select serch input
+const searchInput = document.querySelector("input#search");
+//toggle searc input open class
+searchIcon.onclick = () => {
+  searchInput.classList.toggle("open");
+  //clear search input when closed
+  if (!searchInput.classList.contains("open")) searchInput.value = "";
+  //focus input when search input open
+  searchInput.focus();
+};

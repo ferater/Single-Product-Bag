@@ -10,9 +10,9 @@ $sidebar-bgc-color: var(--surface);
 //*****product container
 $product-container-width: 63.75rem;
 $product-container-bg-color: var(--bg-color);
+//=====product image container=====
 //*****product image
 $product-image-container-width: calc($product-container-width / 2);
-//=====product image container=====
 $product-image-container-bg-color: var(--primary);
 $product-image-container-bg-angle: -30deg;
 $product-image-container-padding-y: 0.625rem;
@@ -32,6 +32,19 @@ $product-info-padding-top: 1rem;
 $product-info-padding-right: 2rem;
 $product-info-padding-bottom: 0;
 $product-info-padding-left: 0;
+//*****actions
+$actions-icon-color: var(--black);
+$actions-icon-size: 1.5rem;
+//search
+$search-input-text-size: 0.75rem;
+$search-input-text-color: var(--primary);
+$search-input-width: calc($actions-icon-size * 5);
+$search-input-padding: 0 calc($actions-icon-size + 5px) 0
+  calc($actions-icon-size / 2);
+$search-input-border-width: 1px;
+$search-input-icon-right-position: 0.22rem;
+$search-input-border-radius: calc($actions-icon-size / 2);
+$search-input-transition-time: 0.25s;
 //product stars
 $product-stars-height: 1.5rem;
 //product name

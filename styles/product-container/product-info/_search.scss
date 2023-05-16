@@ -1,0 +1,40 @@
+& .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  & input#search {
+    width: $actions-icon-size;
+    height: $actions-icon-size;
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+    border: $search-input-border-width solid $search-input-text-color;
+    border-radius: $search-input-border-radius;
+    font-size: $search-input-text-size;
+    color: $search-input-text-color;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    transition: all $search-input-transition-time linear;
+    transform-origin: right center;
+    &.open {
+      opacity: 1;
+      width: $search-input-width;
+      padding: $search-input-padding;
+    }
+    &.open ~ .icon {
+      color: $search-input-text-color;
+      right: $search-input-icon-right-position;
+      // icon will not scale when search box is opened on hover
+      &:hover {
+        scale: 1;
+      }
+    }
+  }
+  & .search-icon {
+    position: absolute;
+    right: -0.22rem;
+    top: 50%;
+    translate: 0 -50%;
+  }
+}
