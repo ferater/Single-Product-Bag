@@ -5,7 +5,7 @@
   & input#search {
     width: $actions-icon-size;
     height: $actions-icon-size;
-    background-color: var(--bg-color);
+    background-color: $search-input-bg-color;
     border: none;
     outline: none;
     border: $search-input-border-width solid $search-input-text-color;

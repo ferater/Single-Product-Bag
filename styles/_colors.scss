@@ -12,6 +12,10 @@ $colors: (
 );
 body {
   --bg-color: #{map-get($map: $colors, $key: "bg-color")};
+  --bg-color-darken-10: darken(
+    $color: map-get($colors, "bg-color"),
+    $amount: 10
+  );
   --black: #{map-get($map: $colors, $key: "black")};
   --black-rgb: #{hexToRGB(map-get($map: $colors, $key: "black"))};
   --white: #{map-get($map: $colors, $key: "white")};

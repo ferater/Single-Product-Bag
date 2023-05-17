@@ -16,7 +16,7 @@
     color: $product-favorite-icon-color;
     position: absolute;
     transform-origin: center;
-    transition: scale 0.05s;
+    transition: scale calc($transition-time / 4);
     &.favorite-icon-filled {
       scale: 1 0;
     }

@@ -4,7 +4,8 @@
   background-color: $btn-bg-color;
   border: none;
   outline: none;
-  transition: background-color 0.2s ease-in-out, scale 0.05s linear;
+  transition: background-color $transition-time ease-in-out,
+    scale calc($transition-time / 4) linear;
   cursor: pointer;
   & span {
     font-weight: $btn-text-weight;

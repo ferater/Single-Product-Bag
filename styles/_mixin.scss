@@ -1,0 +1,13 @@
+//****mixins
+//action popup for cart & account info
+@mixin action-popup {
+  width: fit-content;
+  background-color: $action-popup-bg-color;
+  padding: $action-popup-padding;
+  box-shadow: $action-popup-shadow;
+  position: absolute;
+  top: $action-popup-top-position;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.2s, top 0.2s linear;
+}

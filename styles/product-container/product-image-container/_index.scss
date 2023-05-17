@@ -28,7 +28,7 @@
       height: auto;
       object-fit: cover;
       &.slide-to-left {
-        animation: slideToLeft 0.3s linear;
+        animation: slideToLeft $transition-time linear;
       }
     }
   }
@@ -37,7 +37,7 @@
     content: "";
     width: $product-image-container-width;
     height: calc(100% + 1px);
-    background-color: var(--bg-color);
+    background-color: $product-image-container-after-bg-color;
     position: absolute;
     top: 0;
     right: calc(($product-image-container-width / 1.5) * -1);

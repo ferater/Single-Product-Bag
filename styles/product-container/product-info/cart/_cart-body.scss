@@ -5,7 +5,8 @@
     & tr {
       text-align: center;
       & td {
-        border-bottom: 1px dashed var(--primary);
+        border-bottom: $cart-item-text-underline-size
+          $cart-item-text-underline-color $cart-item-text-underline-color;
         & span {
           font-size: $cart-item-text-size;
           margin-bottom: $cart-item-text-margin-bottom;
@@ -17,7 +18,8 @@
         text-align: end;
         & td {
           border: none;
-          padding: 0.5rem 1rem 0 0;
+          padding: $cart-total-text-padding-top $cart-total-text-padding-right
+            $cart-total-text-padding-bottom $cart-total-text-padding-left;
         }
       }
     }
@@ -27,7 +29,7 @@
     width: 0;
     height: 0;
     border: $cart-body-arrow-size solid transparent;
-    border-bottom-color: var(--primary);
+    border-bottom-color: $cart-body-arrow-color;
     position: absolute;
     top: calc(($cart-body-arrow-size * 2) * -1);
     right: $cart-body-arrow-right-position;
