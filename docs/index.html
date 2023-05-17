@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+  <title>Single Product Page</title>
+  <script type="module" crossorigin src="/assets/index.js"></script>
+  <link rel="stylesheet" href="/assets/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <!-- sidebar menu button -->
+        <div class="menu-button">
+          <a href="#">
+            <iconify-icon icon="mdi:menu" class="icon hover-icon cursor-pointer menu-icon"></iconify-icon>
+          </a>
+        </div>
+        <!-- sidebar social links -->
+        <div class="social">
+          <a href="#"><iconify-icon icon="ri:twitter-fill"
+              class="icon hover-icon cursor-pointer twitter-icon"></iconify-icon></a>
+          <a href="#">
+            <iconify-icon icon="ri:facebook-fill" class="icon hover-icon cursor-pointer facbook-icon"></iconify-icon>
+          </a>
+          <a href="#"><iconify-icon icon="ri:instagram-fill"
+              class="icon hover-icon cursor-pointer instagram-icon"></iconify-icon></a>
+        </div>
+      </div>
+      <!-- product container -->
+      <div class="product-container">
+        <!-- product image container -->
+        <div class="product-image-container">
+          <div class="header">
+            <h1 class="brand-name">wichael kors</h1>
+          </div>
+          <!-- product image  -->
+          <div class="product-image">
+            <img src="/assets/women_bag_light-blue-be65eff7.png" alt="" />
+          </div>
+        </div>
+        <!-- product info container  -->
+        <div class="product-info">
+          <div class="header">
+            <!-- actions -->
+            <div class="actions">
+              <!-- search -->
+              <div class="search">
+                <input type="text" id="search" class="" />
+                <iconify-icon icon="iconoir:search" class="icon hover-icon cursor-pointer search-icon"></iconify-icon>
+              </div>
+              <!-- cart -->
+              <div class="cart">
+                <iconify-icon icon="iconoir:shopping-bag"
+                  class="icon hover-icon cursor-pointer cart-icon"></iconify-icon>
+                <div class="badge">
+                  <span>2</span>
+                </div>
+                <div class="action-popup cart-body">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Product Name</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span>Woman Bag (Purple)</span></td>
+                        <td><span>1</span></td>
+                        <td><span>$365.65</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Woman Bag (Brown)</span></td>
+                        <td><span>1</span></td>
+                        <td><span>$365.65</span></td>
+                      </tr>
+                      <tr class="total-price">
+                        <td colspan="2"><span>Total :</span></td>
+                        <td><span>$731.3</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- user account -->
+              <div class="user-account">
+                <iconify-icon icon="iconoir:user" class="icon hover-icon cursor-pointer account-icon"></iconify-icon>
+                <div class="action-popup account-body">
+                  <ul>
+                    <li><a href="#"><span>My Orders</span></a></li>
+                    <li><a href="#"><span>My Addresses</span></a></li>
+                    <li><a href="#"><span>Logout</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product info -->
+          <div class="content">
+            <div class="stars">
+              <img src="/assets/svg/stars.svg" alt="stars" class="cursor-pointer" />
+            </div>
+            <div class="product-name">
+              <h1>Hope Large Two-Tone Saffiano Leather Satchel</h1>
+            </div>
+            <div class="product-code">
+              <span>Style 351GGx847</span>
+            </div>
+            <div class="product-price">
+              <h2>$365.65</h2>
+            </div>
+            <div class="colors">
+              <span>Colors</span>
+              <div class="color-options">
+                <!-- colors will filled by javascript -->
+              </div>
+              <div class="quantity">
+                <span>Quantity</span>
+                <select name="quantity" id="" class="quantity-select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="add-to-favorite">
+                <label for="favorite">
+                  <input type="checkbox" name="favorite" id="favorite" />
+                  <iconify-icon icon="mdi:heart-outline" class="icon favorite-icon"></iconify-icon>
+                  <iconify-icon icon="mdi:heart" class="icon favorite-icon-filled"></iconify-icon>
+                  <span>Add to favorites</span>
+                </label>
+              </div>
+              <button class="btn btn-add-to-cart">
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
