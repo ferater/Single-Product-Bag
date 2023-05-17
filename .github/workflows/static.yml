@@ -42,7 +42,7 @@ jobs:
       - name: copy file
         uses: canastro/copy-file-action@master
         with:
-          source: "assets/img"
+          source: "./assets/img"
           target: "./dist/assets/"
       - name: Setup Pages
         uses: actions/configure-pages@v3
