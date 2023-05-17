@@ -34,7 +34,7 @@ colorSelectElements.forEach((colorElement, index) => {
     Object.values(colors)[product.colors.indexOf(defaultColor)]
   );
   //set default product image by default color
-  productImage.src = `main/assets/img/women_bag_${defaultColor}.png`;
+  productImage.src = `assets/img/women_bag_${defaultColor}.png`;
 
   colorElement.addEventListener("click", () => {
     //stop if color active
