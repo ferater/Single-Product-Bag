@@ -1,4 +1,6 @@
-![alt text](https://raw.githubusercontent.com/ferater/Single-Product-Bag/main/assets/src/assets/img/ss.gif?raw=true)
+[Live Demo](https://ferater.github.io/Single-Product-Bag/)
+
+[short Video on Youtube](https://www.youtube.com/watch?v=A55c-68T5tM)
 
 ![alt text](https://github.com/ferater/Single-Product-Bag/blob/main/assets/img/ScreenShot.png?raw=true)
 
