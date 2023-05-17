@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/",
+  base: "/Single-Product-Bag/",
   css: {
     modules: {
       scopeBehaviour: "global",
