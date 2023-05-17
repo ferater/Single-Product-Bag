@@ -26,7 +26,7 @@ yarn dev
 npm run dev
 ```
 ```
-visit http://localhost:5173 
+visit http://localhost:5173/Single-Product-Bag/
 ``` 
 
 
