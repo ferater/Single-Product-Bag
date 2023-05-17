@@ -1,6 +1,6 @@
 ![alt text](https://raw.githubusercontent.com/ferater/Single-Product-Bag/main/src/assets/img/ss.gif?raw=true)
 
-![alt text](https://github.com/ferater/Single-Product-Bag/blob/main/assets/img/ScreenShot.png)
+![alt text](https://github.com/ferater/Single-Product-Bag/blob/main/assets/img/ScreenShot.png?raw=true)
 
 # Vue 3 figma to html
 
